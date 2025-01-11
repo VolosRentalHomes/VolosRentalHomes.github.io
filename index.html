@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- i18next and HTTP Backend -->
+  <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.4.0/i18nextHttpBackend.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li id="nav-listings"></li>
+      <li id="nav-blog"></li>
+      <li id="nav-contact"></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1 id="content-welcome"></h1>
+  </main>
+
+  <!-- Language Selector -->
+  <footer>
+    <select id="languageSelector">
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="el">Ελληνικά</option>
+    </select>
+  </footer>
+</body>
+</html>
