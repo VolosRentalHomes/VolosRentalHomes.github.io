@@ -266,7 +266,7 @@ footer p {
 /* ===============================  MID = F O O T E R  ==================================== */
 .subscriber_mid{
 
-  background-color: #a9d1ff; /*before: a9d1ff ; subscriber_header #435978*/
+  background-color: #00796b; /*before: a9d1ff ; subscriber_header #435978*/
   width: 100%;
   /* height: 180px; */
   height: 220px; /*before: 200*/
@@ -338,13 +338,13 @@ footer p {
 
 .footer_About_head{
 
-  color: black;
+  color: white; /*before black*/
 }
 
 .footer_About_links{
 
   font-weight: lighter;
-  color: black;
+  color: white; /*before black */ 
 }
 
 
@@ -403,7 +403,7 @@ footer p {
   letter-spacing: 1px;
   grid-area: subscribe;
   font-family: sans-serif;
-  background: #2cb95b;
+  background: #1b6169;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
@@ -446,14 +446,14 @@ footer p {
 }
 
 .footer_last{
+  margin-top: 4%;
   margin-bottom: 4%;
 }
 
 
 .footer_mid_icons_inner{
-
   font-size: 2rem;
-  color: blue;
+  color: white;
   /* border: 1px solid blue; */
 }
 
@@ -474,7 +474,7 @@ footer p {
 
 /* ====================================== LAST = F O O T E R  STARTS ======================================= */
 .subscriber_last{
-  background-color: #100079; /* before: #0048ac; menu color: #00796b*/
+  background-color: #1b6169; /* before: #0048ac; menu color: #00796b*/
   height: 70px;
   width: 100%;
   display: grid;
@@ -482,12 +482,11 @@ footer p {
   grid-template-columns: 2fr 0.01fr 3fr 1fr;
   grid-template-areas: 
   "logo line3 mid-section copyright";
-   
+  /*justify-content: center; */
 }
 
 
 .footer_logo_last{
-
   text-align: end;
   margin-top: auto;
   margin-bottom: auto;
@@ -502,28 +501,22 @@ footer p {
 }
 
 .footer_last_mid_para{
-
 margin-top: auto;
 margin-bottom: auto;
-
 }
 
 #unleash{
-
   color: white;
   font-weight: lighter;
-
 }
 
 .copyright2{
-
   color: white;
   font-size: 0.7rem;
   font-weight: lighter;
 }
 
 .footer_last_last_para{
-
   margin-top: auto;
   margin-bottom: auto;
 }
