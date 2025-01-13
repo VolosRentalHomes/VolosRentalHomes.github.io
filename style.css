@@ -149,68 +149,6 @@ h2 {
   text-decoration: underline; /* Underline links on hover */
 }
 
-/* Responsive Design for mobile phones*/
-@media only screen and (max-width: 768px) {
-  header {
-    height: auto; /* Allow header to adjust height */
-    padding: 20px;
-  }
-
-  .header-content {
-    background-size: contain; /* Scale background image */
-    padding: 20px;
-  }
-
-  .header-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .header-content p {
-    font-size: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  main {
-    padding: 20px;
-  }
-
-  #contact, #homes, #city-blog, #policy {
-    padding: 20px;
-  }
-
-  .footer_section {
-    padding: 20px;
-  }
-
-  .footer_logo img, .footer_logo_last img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .header-content h1 {
-    font-size: 2rem;
-  }
-
-  .header-content p {
-    font-size: 0.8rem;
-  }
-
-  nav ul {
-    gap: 5px;
-  }
-
-  .footer_logo img, .footer_logo_last img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 /* ############################################################################################*/
 
 /* ===============================  F O O T E R  ==================================== */
