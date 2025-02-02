@@ -41,7 +41,7 @@ nav {
   display: flex;
   justify-content: space-between; /* Distribute space between icon and links */
   align-items: center;
-  padding: 0.5% 2%; /* Use percentage padding for responsive spacing 10px 30px; */
+  padding: 0.83% 2%; /* Use percentage padding for responsive spacing 10px 30px; */
 }
 
 nav .home-icon {
@@ -72,7 +72,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6vw; /* Use viewport width (vw) to make the font size responsive 1.2rem */
   font-weight: bold;
 }
 
@@ -97,13 +97,13 @@ nav ul li a:hover {
 }
 
 .header-content h1 {
-  font-size: 4rem;
+  font-size: 5.45vw; /* Use viewport width to make the font size responsive 4rem*/
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header-content p {
-  font-size: 1.5rem;
+  font-size: 2.045vw; /* Use viewport width to make the font size responsive 1.5rem*/
   font-style: italic;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -119,14 +119,15 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  min-height: 100vh; /* Ensure it takes the full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative; /* Ensure that the pseudo-element is positioned relative to this container */
-  z-index: 0; /* This ensures that the container's content is above the shadow overlay */
+  position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+  z-index: 0; /* Ensures content stays above the shadow overlay */
 }
+
 
 .header-content-mamidaki::before {
   content: '';
@@ -140,30 +141,30 @@ nav ul li a:hover {
 }
 
 .header-content-mamidaki h1 {
-  font-size: 4rem;
+  font-size: 5.45vw;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header-content-mamidaki p {
-  font-size: 1.5rem;
+  font-size: 2.045vw;
   font-style: italic;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .header-content-mamidaki img {
-  border-radius: 15px; /* Adjust the value for the level of rounding */
+  border-radius: 2%; /* Adjust the value for the level of rounding 15px */
 }
 
 /* Main Content Section */
 main {
-  padding: 50px;
+  padding: 4.265% 4.265%; /* Use percentage-based padding for responsiveness 50px  4.25% 5%;*/
   text-align: center;
 }
 
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3.41vw; /* Use viewport width to make the font size responsive 2.5rem */
+  margin-bottom: 1.9%; /* Adjust the value for the level of rounding 20px */
   color: #004d40;
 }
 
@@ -173,12 +174,12 @@ h2 {
 
 #homes {
   color: #004d40;
-  padding: 50px;
+  padding: 4.7% 5.55%; /* Use percentage padding for responsive spacing 50px; */
 }
 
 #city-blog {
   color: #004d40;
-  padding: 50px;
+  padding: 4.7% 5.55%; /* Use percentage padding for responsive spacing 50px; */
 }
 
 #policy { /* used for privacy-policy and terms-of-use */
@@ -186,7 +187,7 @@ h2 {
   text-align: left;
   line-height: 1.6; /* Make the text a bit more readable */
   margin: 0;
-  padding: 70px;
+  padding: 6.632% 6.632%; /* Use percentage padding for responsive spacing 70px; */
 }
 
 #policy a {
@@ -207,11 +208,11 @@ h2 {
 }
 
 /* ===============================  FIRST = F O O T E R  ==================================== */
-
+/* NOT USED
 .subscriber_head{
 
   background-color: #435978;
-  /* display: flex; */
+  //display: flex;
   display: grid;
   text-align: center;
   width: 100%;
@@ -219,10 +220,10 @@ h2 {
   grid-template-columns: 1fr 1.5fr 0.5fr;
   grid-template-areas: 
   "head input subscribe";
-  /* align-items: center;
-  justify-content: center; */
-  /* display: flex; */
-  /* margin: auto; */
+  //align-items: center;
+  //justify-content: center;
+  //display: flex;
+  //margin: auto;
   
 }
 
@@ -236,13 +237,13 @@ h2 {
 
 .subscriber_search_bar{
 
-  /* width: 450px; */
-  /* display: block; */
+  //width: 450px;
+  //display: block;
   width: 100%;
   max-width: 100%;
   font-family: inherit;
  
-  /* max-width: calc(100% - 50%); */
+  // max-width: calc(100% - 50%);
   color: #435978;
 
   font-weight: 500;
@@ -278,7 +279,7 @@ h2 {
   letter-spacing: 4px;
   grid-area: subscribe;
   font-family: sans-serif;
-  background: #045e22; /* before: 2cb95b ; after: 004d40*/ /*TODO*/
+  background: #045e22; // before: 2cb95b ; after: 004d40
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
@@ -287,8 +288,8 @@ h2 {
   border-radius: 0px 50px 50px 0px;
   outline: 0;
   transition: all 0.2s;
+} */
 
-}
 
 /* ===============================  FIRST = F O O T E R = ENDS ==================================== */
 
@@ -296,22 +297,25 @@ h2 {
 
 
 /* ===============================  MID = F O O T E R  ==================================== */
-.subscriber_mid{
 
-  background-color: #00796b; /*before: a9d1ff ; subscriber_header #435978*/
-  width: 100%;
-  /* height: 180px; */
-  height: 220px; /*before: 200*/
+.subscriber_mid {
+  background-color: #00796b; /* before: a9d1ff ; subscriber_header #435978 */
+  width: 100%; /* Full width of the parent container */
+  height: 18.8vw; /* Set height as a percentage of the viewport height 220 */
   display: grid;
-  grid-gap: 25px;
-  grid-template-columns: 0.7fr 0.01fr 1.6fr 0.01fr 1fr;
+  grid-gap: 2%; /* Use percentage-based gap to keep layout consistent 25px */
+  grid-template-columns: 20% 0.5% 40% 0.5% 30%; /* Use percentages for grid columns 0.7fr 0.01fr 1.6fr 0.01fr 1fr */
   grid-template-areas: 
-  "first line second line2 last";
+    "first line second line2 last"; /* Define grid areas */
+}
+
+.subscriber_mid img {
+  width: 100%;  /* Set width as a percentage of the parent container */
+  height: auto;  /* Maintain aspect ratio */
 }
 
 
 .first_para{
-
   margin-left: 10%;
   margin-bottom: auto;
   margin-top: auto;
@@ -324,26 +328,22 @@ h2 {
 
 .vertical {
   border-left: 1px solid #0000004d;
-  height: 156px;
+  height: 20vh; /* Use viewport height for responsiveness 156px */
   grid-area: line;
   margin-top: auto;
   margin-bottom: auto;
-  /* position: absolute;
-  left: 21%;
-  bottom: -23%; */
-
+  width: 0.5%; /* Width as a small percentage of the container */
+  position: relative; /* Keeps the position responsive */
 }
 
-.vertical2{
+.vertical2 {
   border-left: 1px solid #0000004d;
-  height: 156px;
+  height: 20vh; /* Use viewport height for responsiveness 156px */
   grid-area: line2;
   margin-top: auto;
   margin-bottom: auto;
-  /* position: absolute;
-  left: 21%;
-  bottom: -23%; */
-
+  width: 0.5%; /* Set the width to a small percentage */
+  position: relative; /* Keeps the element in its container flow */
 }
 
 .middle_para{
@@ -381,14 +381,6 @@ h2 {
 
 
 
-
-
-
-
-
-
-
-
 .last_para{
   margin-top: auto;
   margin-bottom: auto;
@@ -401,28 +393,22 @@ h2 {
   width: 100%;
 }
 
-.footer_mid_subscribe_bar{
-
-/* width: 450px; */
-  /* display: block; */
-  width: 100%;
-  max-width: 100%;
+.footer_mid_subscribe_bar {
+  width: 100%; /* Full width of the parent container */
+  max-width: 500px; /* Max width to limit the size on larger screens */
   font-family: inherit;
- 
-  /* max-width: calc(100% - 50%); */
   color: #435978;
-
   font-weight: 500;
-  border-radius:50px 0px 0px 50px;
+  border-radius: 50px 0px 0px 50px;
   border: 0px;
-  padding: 15px 0px 15px 20px;
-
-  font-size: 14px;
+  padding: 2% 0px 2% 4%; /* Use percentage-based padding for responsiveness */
+  font-size: 1.3vw; /* Use viewport width for responsive font size */
   background: #F0F4EF;
- 
-
-
+  margin: 0 auto; /* Center align the subscribe bar */
 }
+
+
+
 .footer_mid_subscriber_button{
   border: 0px;
   /* width: 150px; */
