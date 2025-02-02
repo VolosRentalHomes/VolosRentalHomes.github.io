@@ -304,13 +304,13 @@ h2 {
   height: 18.8vw; /* Set height as a percentage of the viewport height 220 */
   display: grid;
   grid-gap: 2%; /* Use percentage-based gap to keep layout consistent 25px */
-  grid-template-columns: 20% 0.5% 40% 0.5% 30%; /* Use percentages for grid columns 0.7fr 0.01fr 1.6fr 0.01fr 1fr */
+  grid-template-columns: 30% 0.5% 30% 0.5% 30%; /* Use percentages for grid columns 0.7fr 0.01fr 1.6fr 0.01fr 1fr */
   grid-template-areas: 
     "first line second line2 last"; /* Define grid areas */
 }
 
 .subscriber_mid img {
-  width: 100%;  /* Set width as a percentage of the parent container */
+  width: 70%;  /* Set width as a percentage of the parent container */
   height: auto;  /* Maintain aspect ratio */
 }
 
@@ -411,14 +411,13 @@ h2 {
 
 .footer_mid_subscriber_button{
   border: 0px;
-  /* width: 150px; */
-  width: 100px;
+  width: 42%; /* former: 100px */
   max-width: 100%;
-  font-size: 700;
-  padding: 13px;
-  font-size: 1rem;
+  font-size: 700; 
+  padding: 3.7%; /* former: 13px */
+  font-size: 1.3vw; /* former: 1rem */
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 0.08vw; /* former: 1px */
   grid-area: subscribe;
   font-family: sans-serif;
   background: #1b6169;
@@ -428,7 +427,7 @@ h2 {
   /* margin-left: 1%; */
   margin-right: 2%;
   font-weight: 500;
-  border-radius: 0px 50px 50px 0px;
+  border-radius:0px 50px 50px 0px;
   outline: 0;
   transition: all 0.2s;
 
@@ -467,7 +466,6 @@ h2 {
   margin-top: 4%;
   margin-bottom: 4%;
 }
-
 
 .footer_mid_icons_inner{
   font-size: 2rem;
