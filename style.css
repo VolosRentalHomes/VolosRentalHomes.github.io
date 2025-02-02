@@ -33,7 +33,6 @@ header {
 nav {
   width: 100%; /* Make the navigation span the entire page width */
   background-color: #00796b; /* Stylish green-blue color for the menu */
-  padding: 10px 0;
   text-align: center;
   position: fixed;
   top: 0;
@@ -42,7 +41,7 @@ nav {
   display: flex;
   justify-content: space-between; /* Distribute space between icon and links */
   align-items: center;
-  padding: 10px 30px;
+  padding: 0.5% 2%; /* Use percentage padding for responsive spacing 10px 30px; */
 }
 
 nav .home-icon {
@@ -58,13 +57,16 @@ nav .home-icon:hover {
 /* Navigation Links */
 nav ul {
   list-style-type: none;
+  justify-content: center; /* Optional: Center the links horizontally */
+  flex-wrap: nowrap; /* Prevent wrapping of items */
   padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 5%;/*20px*/
 }
 
 nav ul li {
   display: inline-block;
+  white-space: nowrap;
 }
 
 nav ul li a {
