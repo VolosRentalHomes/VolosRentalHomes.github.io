@@ -72,7 +72,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.6vw; /* Use viewport width (vw) to make the font size responsive 1.2rem */
+  font-size: clamp(1rem, 1.2vw, 2rem); /* Use viewport width (vw) to make the font size responsive 1.2rem 1.2vw */
   font-weight: bold;
 }
 
@@ -96,14 +96,18 @@ nav ul li a:hover {
   flex-direction: column;
 }
 
+.header-content img{
+  width: 80%; /* Adjust the width of the image */
+}
+
 .header-content h1 {
-  font-size: 5.45vw; /* Use viewport width to make the font size responsive 4rem*/
+  font-size: clamp(2.5rem, 5.45vw, 4rem); /* Use viewport width to make the font size responsive 4rem 5.45vw*/
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header-content p {
-  font-size: 2.045vw; /* Use viewport width to make the font size responsive 1.5rem*/
+  font-size: clamp(1.25rem, 2.045vw, 2rem); /* Use viewport width to make the font size responsive 1.5rem 2.045vw*/
   font-style: italic;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -304,7 +308,7 @@ h2 {
   height: 18.8vw; /* Set height as a percentage of the viewport height 220 */
   display: grid;
   grid-gap: 2%; /* Use percentage-based gap to keep layout consistent 25px */
-  grid-template-columns: 30% 0.5% 30% 0.5% 30%; /* Use percentages for grid columns 0.7fr 0.01fr 1.6fr 0.01fr 1fr */
+  grid-template-columns: 25% 0.5% 35% 0.5% 30%; /* Use percentages for grid columns 0.7fr 0.01fr 1.6fr 0.01fr 1fr */
   grid-template-areas: 
     "first line second line2 last"; /* Define grid areas */
 }
