@@ -41,7 +41,7 @@ nav {
   display: flex;
   justify-content: space-between; /* Distribute space between icon and links */
   align-items: center;
-  padding: 0.83% 2%; /* Use percentage padding for responsive spacing 10px 30px; */
+  padding: 0.83% 1%;  /* Reduce padding to create more space */
 }
 
 nav .home-icon {
@@ -61,7 +61,7 @@ nav ul {
   flex-wrap: nowrap; /* Prevent wrapping of items */
   padding: 0;
   display: flex;
-  gap: 5%;/*20px*/
+  gap: 5%; /* Reduce gap to create more space */
 }
 
 nav ul li {
@@ -72,8 +72,9 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: clamp(1rem, 1.2vw, 2rem); /* Use viewport width (vw) to make the font size responsive 1.2rem 1.2vw */
+  font-size: clamp(1rem, 1.2vw, 2rem); /* Use viewport width (vw) to make the font size responsive */
   font-weight: bold;
+  padding: 0.25rem 0.25rem; /* Add padding to increase the size of the boxes */
 }
 
 nav ul li a:hover {
@@ -119,6 +120,24 @@ nav ul li a:hover {
   text-align: center;
   padding: 0;
   background-image: url('images/mamidaki_garden.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+  z-index: 0; /* Ensures content stays above the shadow overlay */
+}
+
+/* Slogan Section with Background Image */
+.header-content-pilion {
+  text-align: center;
+  padding: 0;
+  background-image: url('images/city.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -211,95 +230,6 @@ h2 {
   margin: 0 auto;
 }
 
-/* ===============================  FIRST = F O O T E R  ==================================== */
-/* NOT USED
-.subscriber_head{
-
-  background-color: #435978;
-  //display: flex;
-  display: grid;
-  text-align: center;
-  width: 100%;
-  height: 70px;
-  grid-template-columns: 1fr 1.5fr 0.5fr;
-  grid-template-areas: 
-  "head input subscribe";
-  //align-items: center;
-  //justify-content: center;
-  //display: flex;
-  //margin: auto;
-  
-}
-
-.subscriber_search_box{
-
-  margin: auto;
-  display: flex;
-  width: 100%;
-  grid-area: input;
-}
-
-.subscriber_search_bar{
-
-  //width: 450px;
-  //display: block;
-  width: 100%;
-  max-width: 100%;
-  font-family: inherit;
- 
-  // max-width: calc(100% - 50%);
-  color: #435978;
-
-  font-weight: 500;
-  border-radius:50px 0px 0px 50px;
-  border: 0px;
-  padding: 15px 0px 15px 20px;
-
-  font-size: 14px;
-  background: #F0F4EF;
-}
-
-.subscriber_head h1{
-  font-size: 1.5rem;
-  font-weight: lighter;
-  color: white;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-family: sans-serif;
-  grid-area: head;
-  text-align: right;
-  margin-right: 10px;
-
-}
-
-.subscriber_button{
-  border: 0px;
-  width: 150px;
-  max-width: 100%;
-  font-size: 700;
-  padding: 15px;
-  font-size: 1rem;
-  color: white;
-  letter-spacing: 4px;
-  grid-area: subscribe;
-  font-family: sans-serif;
-  background: #045e22; // before: 2cb95b ; after: 004d40
-  cursor: pointer;
-  margin-top: auto;
-  margin-bottom: auto;
-
-  font-weight: 500;
-  border-radius: 0px 50px 50px 0px;
-  outline: 0;
-  transition: all 0.2s;
-} */
-
-
-/* ===============================  FIRST = F O O T E R = ENDS ==================================== */
-
-
-
-
 /* ===============================  MID = F O O T E R  ==================================== */
 
 .subscriber_mid {
@@ -365,25 +295,23 @@ h2 {
   margin-bottom: auto;
   margin-right: auto;
   margin-left: auto;
-  
 }
+
 .footer_About_para{
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
 .footer_About_head{
-
   color: white; /*before black*/
+  font-size: clamp(1rem, 1.7vw, 1.4rem); /* current size: 1.4rem */
 }
 
 .footer_About_links{
-
   font-weight: lighter;
-  color: white; /*before black */ 
+  color: white; /*before black */
+  font-size: clamp(1rem, 1.7vw, 1.4rem); /* current size: 1.6rem */
 }
-
-
 
 .last_para{
   margin-top: auto;
@@ -406,7 +334,7 @@ h2 {
   border-radius: 50px 0px 0px 50px;
   border: 0px;
   padding: 2% 0px 2% 4%; /* Use percentage-based padding for responsiveness */
-  font-size: 1.3vw; /* Use viewport width for responsive font size */
+  font-size: 1rem;
   background: #F0F4EF;
   margin: 0 auto; /* Center align the subscribe bar */
 }
@@ -419,7 +347,7 @@ h2 {
   max-width: 100%;
   font-size: 700; 
   padding: 3.7%; /* former: 13px */
-  font-size: 1.3vw; /* former: 1rem */
+  font-size: 1rem;
   color: white;
   letter-spacing: 0.08vw; /* former: 1px */
   grid-area: subscribe;
@@ -545,10 +473,14 @@ margin-bottom: auto;
 
 /* -----------------------------MEDIA QUERIES----------------------------- */
 
-@media only screen and (max-width: 992px) {
 
+/*
+Größte min 1050px
+dann das was ab 750 kommt
+
+*/
+@media only screen and (max-width: 1050px) {
   .subscriber_head{
-  
       grid-template-columns: 0.5fr 2.5fr 0.5fr;
   }
   #free_daily_updates{
@@ -557,25 +489,17 @@ margin-bottom: auto;
 
   .quick_signup{
   display: none;
-
   }
-  
-  
-  
-  
 }
 
-
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 950px) {
   .subscriber_head{
-  
       grid-template-columns: 0.1fr 1fr 0.1fr;
   }
 
   .subscriber_mid{
+      flex-wrap: wrap;
       grid-template-columns:1fr;
-      /* grid-template-rows: 1.2fr 0.01fr 1fr 0.01fr 1fr; */
       grid-template-rows: 0.9fr 0.01fr 0.9fr 0.01fr 0.9fr;
       grid-template-areas:
       "first"
@@ -587,8 +511,6 @@ margin-bottom: auto;
       grid-gap: 0px;
   }
 
-
-
   .first_para{
       margin-left: 3%;
   }
@@ -599,6 +521,7 @@ margin-bottom: auto;
   
   .last_para{
       text-align: center;
+      flex-wrap: wrap;
   }
   
   .footer_mid_subscriber_button{
@@ -609,10 +532,8 @@ margin-bottom: auto;
       display: none;
   }
 
-
   .vertical2{
       display: none;
-      
   }
 
   .vertical3{
@@ -627,8 +548,6 @@ margin-bottom: auto;
   .horizontal2{
       border-bottom: 1px solid #0000004d;
       grid-area: horizontal2;
-
-      
   }
 
   .contacts h4{
@@ -639,7 +558,6 @@ margin-bottom: auto;
   }
 
   .contacts{
-
       margin-top: 3%;
       margin-bottom: 3%;
   }
@@ -647,10 +565,11 @@ margin-bottom: auto;
   .icon_section{
       margin-left: 0%;
       justify-content: center;
+      font-size: 1.5rem; /* Make the icon section smaller */
   }
 
   .footer_mid_icons_inner{
-      font-size: 3rem;
+      font-size: 2rem; /* Adjust icon size */
   }
 
   .subscriber_last{
@@ -676,15 +595,31 @@ margin-bottom: auto;
       margin: 0;
   }
 
+  /* New styles to place footer_form_mid and contacts next to each other */
+  .last_para {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
 
+  .footer_last {
+      flex: 1; /* Increase flex value to give more space */
+      margin-right: 2%; /* Add some margin for spacing */
+  }
+  
+
+  .contacts {
+      flex: 1; /* Decrease flex value to give less space */
+      margin-left: 1%; /* Add some margin for spacing */
+  }
 }
-
-
 
 @media only screen and (max-width: 576px) {
 
+
   .subscriber_head{
-  
       grid-template-columns: 0.1fr 1fr 0.1fr;
   }
 
@@ -722,8 +657,6 @@ margin-bottom: auto;
   }
 
   .footer_About{
-
-
       margin-top: auto;
       margin-bottom: auto;
       margin-left: 8.4%;
@@ -731,44 +664,46 @@ margin-bottom: auto;
   }
 
   .footer_About_head{
-
-      font-size: 1.4rem;
+      font-size: 1rem;
   }
 
   .footer_About_links{
-
-      font-size: 1.6rem;  
+      font-size: 1rem;  
   }
 
 
   #footer_first_head{
-
       font-size: 2rem;
   }
 
 
   .footer_para h5{
-
       font-size: 1.2rem;
   }
-
-
-
-
-
 }
 
-
-@media only screen and (max-width: 502px) {
-
-
-
-.subscriber_mid{
-
-  grid-template-rows: 0.9fr 0.01fr 2.5fr 0.01fr 0.3fr;
+@media only screen and (max-width: 530px) {
+  /*The text in Subscribe bar should be smaller*/
+  .footer_mid_subscribe_bar
+  {
+      font-size: 0.8rem;
+  }
 }
 
+@media only screen and (max-width: 460px) {
+  /*div footer last should not be displayed */
+  .footer_last{
+      display: none;
+  }
+}
 
+/* Media query for laptop screen sizes */
+@media only screen and (min-width: 1200px) {
+  nav {
+    padding: 0.5% 1%; /* Reduce padding for thinner nav bar */
+  }
 
-
+  nav ul li a {
+    padding: 0.2rem 0.2rem; /* Reduce padding for nav links */
+  }
 }
