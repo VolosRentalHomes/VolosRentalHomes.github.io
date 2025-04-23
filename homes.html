@@ -8,21 +8,31 @@
   <!-- FontAwesome for the home icon -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-  <!-- Navigation Menu -->
-  <nav>
-    <!-- Home Icon on the left -->
-    <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
-    <ul>
-      <li><a href="index.html#contact">Contact Us</a></li>
-      <li><a href="homes.html">Homes</a></li>
-      <li><a href="city-blog.html">City Blog</a></li>
-    </ul>
-  </nav>
+<body>  
+
+  <!-- Navigation Menu at the top -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <h1 class="logo">
+         <a href="index.html" class="logo-link">Volos Rental Homes</a>
+      </h1>
+      <label for="navbar-toggler" class="navbar-toggler">
+         <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
+      <nav class="navbar-menu">
+         <a href="index.html" class="navbar-link">Home</a>
+         <a href="homes.html" class="navbar-link navbar-link-active">Apartments</a>
+         <!--<a href="city-blog.html" class="navbar-link">Blog</a> -->
+         <a href="index.html#contact" class="navbar-link">Contact us</a>
+      </nav>
+   </div>
+  </div>
+  <!-- End Navigation Menu -->
 
   <!-- Homes Content Section -->
   <main>
-    <section id="homes">
+    <section id="homes-content">
       <h2>Homes in Volos</h2>
       <p>Discover beautiful homes in Volos. Explore the best properties available.</p>
       <p>We have a range of apartments and houses to meet your needs. Feel free to contact us for more details.</p>

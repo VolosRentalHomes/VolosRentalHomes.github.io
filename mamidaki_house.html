@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,184 +9,436 @@
   <!-- FontAwesome for the home icon -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-  <!-- Header Section -->
-  <header>
-    <!-- Navigation Menu -->
-    <nav>
-        <!-- Home Icon on the left -->
-        <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
-        <ul>
-        <li><a href="index.html#contact">Contact Us</a></li>
-        <li><a href="homes.html">Homes</a></li>
-        <li><a href="city-blog.html">City Blog</a></li>
-        </ul>
-    </nav>
 
-      <!-- Slogan Section with Background Image - Mamidaki -->
-      <div class="header-content-mamidaki">
-        <img src="images/mamidaki_house.jpeg" alt="Volos Rental Homes Logo" width="500" height="500">
-        <h1>Welcome to our Mamidaki Beach House</h1>
-        <p>An idyllic, private beach resort to unwind, away from the city hustle.</p>
-      </div>
-    </header>
+<body class="page">
+  <!-- Navigation Menu at the top -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <h1 class="logo">
+        <a href="index.html" class="logo-link">Volos Rental Homes</a>
+      </h1>
+      <label for="navbar-toggler" class="navbar-toggler">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
+      <nav class="navbar-menu">
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="homes.html" class="navbar-link">Apartments</a>
+        <!--<a href="city-blog.html" class="navbar-link">Blog</a> -->
+        <a href="#contact" class="navbar-link">Contact us</a>
+      </nav>
+    </div>
+  </div>
+  <!-- End Navigation Menu -->
+
+  <!-- Slogan Section with Background Image - Mamidaki -->
+  <preposition class="header-content-mamidaki">
+    <img src="images/mamidaki_house.jpeg" alt="Volos Rental Homes Logo" width="500" height="500">
+    <h1>Mamidaki Beach House</h1>
+    <p>An idyllic, private beach resort to unwind, away from the city hustle.</p>
+  </preposition>
 
   <!-- Homes Content Section -->
   <main>
-    <section id="homes">
-      <h2>Homes in Volos</h2>
-      <p>Discover beautiful homes in Volos. Explore the best properties available.</p>
-      <p>We have a range of apartments and houses to meet your needs. Feel free to contact us for more details.</p>
+
+    <!-- General House -->
+    <div id="homes-content-general">
+      <h2>Welcome to our Mamidaki Beach House</h2>
+      <p>The house can accommodate up to 19 guests across four separate apartments.</p>
+      <p>It offers plenty of space to relax and unwind, with a large garden, several balconies, and direct access to the
+        beach right in front of the property.</p>
+    </div>
+
+    <section class="gallery">
+      <div class="img-box" data-value="1">
+        <img src="images/house_general/beach_front.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="2">
+        <img src="images/house_general/garden_erdgeschoss.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="3">
+        <img src="images/house_general/house0.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/house_general/garden_front.jpeg" alt="">
+      </div>
     </section>
+
+    <details class="gallery-toggle">
+      <summary>> Show More</summary>
+      <div class="gallery">
+        <div class="img-box" data-value="5">
+          <img src="images/house_general/garden_oben2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="6">
+          <img src="images/house_general/garden_studio-wohnung.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="8">
+          <img src="images/house_general/garden_erdgeschoss3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="9">
+          <img src="images/house_general/house1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="10">
+          <img src="images/house_general/house2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="11">
+          <img src="images/house_general/house3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="12">
+          <img src="images/house_general/house4.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="13">
+          <img src="images/house_general/studio_and_terasse.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="14">
+          <img src="images/house_general/terasse_view.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="15">
+          <img src="images/house_general/terasse_view2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="16">
+          <img src="images/house_general/terasse_view3.jpeg" alt="">
+        </div>
+      </div>
+    </details>
+
+
+    <!-- Studio Apartment -->
+    <div id="homes-content">
+      <h2>The Studio...</h2>
+      <p>... features a big double bed, a kitchen, a bathroom and a beautiful terrasse.</p>
+      <p>Maximum number of guests: 2</p>
+      <p>Price per night: 70€</p>
+    </div>
+
+    <section class="gallery">
+      <div class="img-box" data-value="2">
+        <img src="images/studio/studio_front.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="2">
+        <img src="images/studio/Bett_1.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="2">
+        <img src="images/studio/Gang_2.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="2">
+        <img src="images/studio/Kueche.jpeg" alt="">
+      </div>
+    </section>
+
+    <details class="gallery-toggle">
+      <summary>> Show More</summary>
+      <div class="gallery">
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Eingang.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Bett_Terasse.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Bett_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Kueche_Bad.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Terasse_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Terasse_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="1">
+          <img src="images/studio/Bad_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Bad_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/studio/Gang.jpeg" alt="">
+        </div>
+      </div>
+    </details>
+
+    <!-- Ground Floor -->
+    <div id="homes-content">
+      <h2>The Main House Ground Floor...</h2>
+      <p>... features two double bedrooms, a big kitchen, a bathroom, a big living room with a sleeper sofa, and a
+        terrasse.</p>
+      <p>Maximum number of guests: 5</p>
+      <p>Price per night: 170€</p>
+    </div>
+
+    <section class="gallery">
+      <div class="img-box" data-value="4">
+        <img src="images/house_general/house_entrance_front.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/ground_floor/kaminzimmer_2.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/ground_floor/salon2.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="1">
+        <img src="images/ground_floor/Kueche.jpeg" alt="">
+      </div>
+
+    </section>
+
+    <details class="gallery-toggle">
+      <summary>> Show More</summary>
+      <div class="gallery">
+        <div class="img-box" data-value="2">
+          <img src="images/ground_floor/salon_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/esszimmer.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/ground_floor/salon.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/esszimmer_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/kaminzimmer_3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/kaminzimmer_4.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/kaminzimmer_5.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/kaminzimmer.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/schlafzimmer_3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/ground_floor/schlafzimmer.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="1">
+          <img src="images/ground_floor/bad_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/ground_floor/Bad_3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/ground_floor/bad.jpeg" alt="">
+        </div>
+      </div>
+    </details>
+
+    <!-- First Floor -->
+    <div id="homes-content">
+      <h2>The Main House First Floor...</h2>
+      <p>... features four double bedrooms, two bathrooms and a big balcony accessible by every rooms.</p>
+      <p>Maximum number of guests: 8</p>
+      <p>Price per night: 220€</p>
+    </div>
+
+    <section class="gallery">
+      <div class="img-box" data-value="2">
+        <img src="images/upper_floor/Bad1_2.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/upper_floor/balcony_view_zimmer4.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/upper_floor/Zimmer3_3.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/upper_floor/Zimmer3_1.jpeg" alt="">
+      </div>
+    </section>
+
+    <details class="gallery-toggle">
+      <summary>> Show More</summary>
+      <div class="gallery">
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/balcony_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/upper_floor/balcony_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/upper_floor/balcony_3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/upper_floor/balcony_6.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/balcony_7.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/upper_floor/balcony_bathroom.jpeg" alt="">
+        </div>
+        <!-- <div class="img-box" data-value="3">
+          <img src="images/upper_floor/balcony_view.jpeg" alt="">
+        </div> <!-->
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/balcony_view_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/upper_floor/balcony_view_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/upper_floor/balcony_view_zimmer3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Treppe.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/upper_floor/Gang_Bad1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer1_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer1_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer1_3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer1_Bad.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer2_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer2_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer3_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Zimmer4_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="1">
+          <img src="images/upper_floor/Bad1_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/upper_floor/Bad1_4.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/upper_floor/Bad1_3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="2">
+          <img src="images/upper_floor/Bad2_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/upper_floor/Bad2_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="3">
+          <img src="images/upper_floor/Gang_Bad2.jpeg" alt="">
+        </div>
+      </div>
+    </details>
+
+    <!-- First Floor Studio -->
+    <div id="homes-content">
+      <h2>The First Floor Studio...</h2>
+      <p>... features two double beds, a bathroom and a big terasse.</p>
+      <p>Maximum number of guests: 4</p>
+      <p>Price per night: 120€</p>
+    </div>
+
+    <section class="gallery">
+      <div class="img-box" data-value="2">
+        <img src="images/garsioniera/appartment_entrance.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/garsioniera/Wohnbereich.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/garsioniera/Schlafzimmer_1.jpeg" alt="">
+      </div>
+      <div class="img-box" data-value="4">
+        <img src="images/garsioniera/terasse_1.jpeg" alt="">
+      </div>
+    </section>
+
+    <details class="gallery-toggle">
+      <summary>> Show More</summary>
+      <div class="gallery">
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Bett_oben_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Bett_oben_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Gang.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Kueche.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Schlafzimmer_2.jpeg" alt="">
+        </div>
+        <!-- <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Schlafzimmer_3.jpeg" alt="">
+        </div> -->
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/schlafzimmer_5.jpeg" alt="">
+        </div>
+        <!-- <div class="img-box" data-value="4">
+          <img src="images/garsioniera/terasse_2.jpeg" alt="">
+        </div> -->
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/terasse_3.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/terasse_view.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/terasse_view_2.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/terasse_view_3.jpeg" alt="">
+        </div>
+        <!-- <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Treppe.jpeg" alt="">
+        </div> -->
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Bad_1.jpeg" alt="">
+        </div>
+        <div class="img-box" data-value="4">
+          <img src="images/garsioniera/Bad_2.jpeg" alt="">
+        </div>
+      </div>
+    </details>
+
+    <!-- Image viewer -->
+    <div class="window">
+      <img src="" alt="" class="full-img">
+    </div>
+    <script src="image_viewer.js"></script>
+    <!-- End Image viewer -->
+
   </main>
 
-  <div class="footer_section">
 
-    <!--======================================= FOOTER TOP SECTION START =========================== -->
-            <!--<div class="subscriber_head">
-    
-                <h1 id="free_daily_updates">Free Daily Updates</h1>
-    
-                
-                <form action="" class="subscriber_search_box" method="get"  >
-                    
-                    <input class="subscriber_search_bar" type="text" placeholder="Write your email here">
-    
-               
-                    <button class="subscriber_button" type="submit" >Subscribe</button>
-            </form>
-    
-            </div> -->
-    
-            
-    <!--======================================= FOOTER TOP SECTION ENDS =========================== -->
-    
-    <!--======================================= FOOTER MID SECTION START =========================== -->
-    
-            <div class="subscriber_mid">
-    
-            <div class="first_para">
-              <div class="footer_logo"><img src="images/VolosRentalHomes_Lettering_white.svg" alt="Volos Rental Homes Logo" width="250" height="50"></div>
-                <!--<div class="footer_logo"><h3>Volos Rental Homes</h3></div> -->
-                        <div class="footer_para">
-                            
-                            <h3 id="footer_first_head">Start Your Journey Now</h3>
-                            <br>
-                   
-                            <h5>info@volosrentalhomes.com</h5>
-                            <h5>www.volosrentalhomes.com</h5>
-                       
-                        </div>
-    
-                   
-                    </div>
-              
-                    
-                 
-                    <div class = "vertical2"></div>   <div class = "horizontal"></div> 
-                    <div class="middle_para">
-                    
-                        <div class="footer_About">
-                            <h4 class="footer_About_para"><a class="footer_About_head" href="#">About</a></h5>
-                            <h5 class="footer_About_para"><a class="footer_About_links" href="mamidaki_house.html">Mamidaki Beach House</a></h5>
-                            <h5 class="footer_About_para"><a class="footer_About_links" href="pilion_house.html">Pilion House</a></h5>
-                            <!--<h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5>
-                            <h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5> -->
-    
-    
-                        </div>
-    
-                        <div class="footer_About">
-                                <h4 class="footer_About_para"><a class="footer_About_head" href="#">Policies</a></h5>
-                                <h5 class="footer_About_para"><a class="footer_About_links" href="terms-of-use.html">Terms of use</a></h5>
-                                <h5 class="footer_About_para"><a class="footer_About_links" href="privacy-policy.html">Privacy Policy</a></h5>
-                                <!--<h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5>
-                                <h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5>-->
-                        </div>
-    
-                        <!--<div class="footer_About">
-                            <h4 class="footer_About_para"><a class="footer_About_head" href="#">What's New</a></h5>
-                            <h5 class="footer_About_para"><a class="footer_About_links" href="terms-of-use.html">Terms of use</a></h5>
-                            <h5 class="footer_About_para"><a class="footer_About_links" href="privacy-policy.html">Privacy Policy</a></h5>
-                            <h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5>
-                            <h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5>
-    
-    
-                        </div>
-    
-                        <div class="footer_About">
-                                <h4 class="footer_About_para"><a class="footer_About_head" href="#">Legal</a></h5>
-                                <h5 class="footer_About_para"><a class="footer_About_links" href="terms-of-use.html">Terms of use</a></h5>
-                                <h5 class="footer_About_para"><a class="footer_About_links" href="privacy-policy.html">Privacy Policy</a></h5>
-                                <h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5>
-                                <h5 class="footer_About_para"><a class="footer_About_links" href="">Risk Of Factor</a></h5>
-                        </div>-->
-    
-    
-                    </div>
-    
-                    
-    
-                    
-                    <div class = "vertical"></div><div class = "horizontal2"></div> 
-    
-                <div class="last_para">
-    
-                    <div class="footer_last">
-                        <p class="quick_signup">Stay in touch with us</p>
-                        <!--<h5 id="free_daily_updates">Dont Forget To Subscribe</h5> -->
-                        <form action="" class="footer_form_mid" method="get"  >
-                    
-                            <input class="footer_mid_subscribe_bar" type="text" placeholder="Write your email here">
-            
-                       
-                            <button class="footer_mid_subscriber_button" type="submit" >Subscribe</button>
-                    </form>
-                    </div>
-    
-                    <div class="contacts">
-                        <h4>Connect:
-                      
-                        </h4>
-                        <div class="icon_section">
-                        <!--<a class="footer_mid_icons" href=""><i class="fab fa-twitter footer_mid_icons_inner"></i></a>-->
-                        <a class="footer_mid_icons" href="https://wa.me/[mynumber]" target="_blank"><i class="fab fa-whatsapp footer_mid_icons_inner"></i></a>
-                        <a class="footer_mid_icons" href=""><i class="fab fa-instagram footer_mid_icons_inner"></i></a>
-                        <a class="footer_mid_icons" href=""><i class="fab fa-facebook footer_mid_icons_inner"></i></a>
-                        <a class="footer_mid_icons" href="viber://chat/?number=%2B306943988446"><i class="fab fa-viber footer_mid_icons_inner"></i></a>
-                        <!--<a class="footer_mid_icons" href=""><i class="fab fa-linkedin footer_mid_icons_inner"></i></a>
-                        <a class="footer_mid_icons" href=""><i class="fab fa-youtube footer_mid_icons_inner"></i></a>
-                        <a class="footer_mid_icons" href=""><i class="fab fa-twitter footer_mid_icons_inner"></i></a>-->
-                    </div>
-                    </div>
-    
-                </div>
-    
-            </div>
-    
-    <!--======================================= FOOTER MID SECTION ENDS =========================== -->
-    
-    <!--======================================= FOOTER LAST SECTION START =========================== -->
-        <div class="subscriber_last">
-            <div class="footer_logo_last"><img src="images/VolosRentalHomes_Lettering_white.svg" alt="Volos Rental Homes Logo" width="250" height="50"></div>
-            <div class = "vertical3"></div>
-            <div class = "footer_last_mid_para"><p id="unleash">Start Your Journey Now.</p></div>
-            <div class = "footer_last_last_para">
-                <p class="copyright2">&copy; 2025 VolosRentalHomes. All right reserved</p>
-            </div>
-    
-        </div>
-    <!--======================================= FOOTER LAST SECTION ENDS =========================== -->
-    
-    </div>
-    
-    <!--======================================= MAIN FOOTER ENDS =========================== -->
-    <!-- Footer -->
-    <!-- <footer>
+  <!-- Footer Section -->
+  <div id="footer"></div>
+
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  <!-- End Footer Section -->
+
+</body>
+
+</html>
+<!-- <footer>
       <p>&copy; 2025 VolosRentalHomes</p>
       <p> Posidonos </p>
       <p> 38500 Volos</p> 
     </footer> -->
-  </body>
-  </html>
-  
+
