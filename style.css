@@ -145,7 +145,7 @@ preposition {
 
 /**
  * ##############################################################################################
- * ===============================  N A V B A R  ====================================
+ * ===============================  END N A V B A R  ====================================
  * ##############################################################################################
  */
 
@@ -180,6 +180,37 @@ preposition {
   font-size: clamp(1.25rem, 2.045vw, 2rem); /* Use viewport width to make the font size responsive 1.5rem 2.045vw*/
   font-style: italic;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Homes Subpage */
+
+/* Slogan Section with Background Image */
+.header-content-homes {
+  text-align: center;
+  padding: 0;
+  background-image: url('images/pilion_house/pilion_view.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+  z-index: 0; /* Ensures content stays above the shadow overlay */
+}
+
+.header-content-homes h2 {
+  color: white;
+  font-size: clamp(2.5rem, 3.7vw, 4rem); /* Use viewport width to make the font size responsive 4rem 5.45vw*/
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+
+.header-content-homes p {
+  font-size: clamp(1.25rem, 1.3vw, 2rem); /* Use viewport width to make the font size responsive 1.5rem 2.045vw*/
+  font-style: italic;
 }
 
 /* Mamidaki Subpage */
@@ -259,18 +290,74 @@ main {
 }
 
 h2 {
-  font-size: 3.41vw; /* Use viewport width to make the font size responsive 2.5rem */
+  font-size: clamp(2rem, 3.41vw, 4rem); /* Use viewport width to make the font size responsive 4rem 5.45vw*/
   margin-bottom: 1.9%; /* Adjust the value for the level of rounding 20px */
   color: #004d40;
 }
+
+/* Contact Section */
 
 #contact {
   color: #004d40;
 }
 
+#contact ul li {
+  margin-left:5%;
+  text-align: left;
+}
+
+#contact a {
+  color: #004d40; /* Set link color */
+}
+
+/* Contact Emojis */
+
+.contact-list {
+  list-style: none;
+
+  margin: 0;
+  padding-top: 50px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+
+.contact-item .footer_mid_icons_inner{
+  color: #00796b;
+}
+
+.footer_mid_icons_inner {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #333; /* adjust as needed */
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* End Contact Emojis */
+
+/* End Contact Section */
+
+/* Homes Subpage */
+
 #homes-content-general {
   color: #004d40;
   padding: 4.7% 5.55%; 
+  flex: 1;
+  min-width: 250px;
 }
 
 #homes-content {
@@ -278,13 +365,51 @@ h2 {
   padding: 10% 5.55% 1%; /* padding for: top right bottom left */
 }
 
-/*Responsive Image Gallery*/
+#homes-content-end {
+  color: #004d40;
+  padding: 10% 5.55% 10%; /* padding for: top right bottom left */
+}
+
+#homes-content h2, 
+#homes-content-general h2{
+  font-size: clamp(2rem, 3vw, 4rem); /* Use viewport width to make the font size responsive 4rem 5.45vw*/
+  margin-bottom: 1.9%; /* Adjust the value for the level of rounding 20px */
+  color: #004d40;
+}
+
+#homes-content-link a,
+#homes-content-general a {
+  color: #004d40; /* Set link color */
+  padding: 0.3% 5.55%; 
+}
+
+
+#homes-content ul li,
+#homes-content-general ul li {
+  /* Alternatively, you can use margin-left */
+  margin-left: 30px;
+}
+
+/* Homes container */
+.homes-content-container {
+  display: flex; /* Use flexbox to align items side by side */
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between the text and gallery */
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Responsive Image Gallery*/
 .gallery {
+  flex: 1;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+}
+.gallery a{
+  color: #004d40;
+  
 }
 .img-box{
   width: 300px; 
@@ -351,6 +476,10 @@ h2 {
   display: none;
 }
 /*End of Responsive Image Gallery*/
+
+/* End of Homes Subpage */
+
+/* Blog Section */
 
 #city-blog {
   color: #004d40;
